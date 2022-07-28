@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal window</title>
+  </head>
+
+  <body>
+    <button class="show-modal">Show modal 1</button>
+    <button class="show-modal">Show modal 2</button>
+    <button class="show-modal">Show modal 3</button>
+    <div class="modal hidden">
+      <!-- ACHTUNG it's hidden because in css it says 'display: none;'-->
+      <button class="close-modal">&times;</button>
+      <h1>I'm a modal window 😍</h1>
+      <p>
+        Here is a very small project to understand how JavaScript works with
+        click event. <br />
+        All these three modals are connected to the same text, so we use
+        <em>'document.querySelectorAll'</em> to select all of them. <br />
+        To close the modal just click the <strong>'&times;'</strong> icon or
+        anywhere out of the modal. Or you can simply press the key
+        <strong>'esc'</strong>. <br />
+        In this project, <strong> 'classList.add'</strong>,
+        <strong>'classList.remove'</strong>
+        and <strong>'classList.contains'</strong> methods are used to add and
+        remove the 'hidden' class in the CSS file which you can find in the
+        'script.js' file. You can also find detailed notes about certain methods
+        in the file.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
